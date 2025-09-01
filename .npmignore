@@ -1,0 +1,20 @@
+# Ignore source maps
+*.map
+
+# Ignore tests
+test/
+__tests__/
+
+# Ignore configs and local dev files
+.vscode/
+.env
+.DS_Store
+*.log
+
+# Ignore build tools
+webpack.config.js
+
+# NPM package lock files (optional, if you don't want to commit them)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
