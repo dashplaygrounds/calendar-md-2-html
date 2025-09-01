@@ -1,4 +1,5 @@
-const { markdownToTree, treeToCalendarHTMLTable, treeToHTML } = require('./index');
+const { markdownToTree, treeToCalendarHTMLTable, treeToHTML } = require('calendar-md-to-html');
+// const { markdownToTree, treeToCalendarHTMLTable, treeToHTML } = require('./index');
 const fs = require('fs');
 // const md = `
 // # Root
