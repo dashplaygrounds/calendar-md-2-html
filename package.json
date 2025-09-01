@@ -1,6 +1,6 @@
 {
-  "name": "calendar-md-to-html",
-  "version": "1.0.1",
+  "name": "calendar-md-2-html",
+  "version": "1.2.0",
   "description": "Library that converts own parsed calendar markdown to html string",
   "main": "index.js",
   "types": "index.d.ts",
@@ -26,9 +26,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashplaygrounds/calendar-md-to-html"
+    "url": "https://github.com/dashplaygrounds/calendar-md-2-html"
   },
   "dependencies": {
-    "calendar-md-to-html": "^1.0.1"
+    "calendar-md-2-html": "^1.2.0"
   }
 }

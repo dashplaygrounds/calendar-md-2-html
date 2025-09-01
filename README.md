@@ -1,4 +1,4 @@
-# calendar-md-to-html
+# calendar-md-2-html
 
 ![Calendar Markdown to HTML Demo](image.png)
 
@@ -10,9 +10,9 @@ Published to npm registry
 
 ## Import this in your application
 ```bash
-pnpm add calendar-md-to-html
-yarn add calendar-md-to-html
-npm i calendar-md-to-html
+pnpm add calendar-md-2-html
+yarn add calendar-md-2-html
+npm i calendar-md-2-html
 ```
 
 ## Usage 1

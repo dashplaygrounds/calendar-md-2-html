@@ -1,9 +1,9 @@
 version: '3'
 
 env:
-  VERSION: "v1.0.1"
+  VERSION: "v1.2.0"
   MESSAGE: |
-    * initial commit
+    * used different package name calendar-md-2-html
 
 tasks:
   commit:
@@ -26,11 +26,12 @@ tasks:
   install:
     desc: Install the package
     cmds:
-      - pnpm install calendar-md-to-html
+      - pnpm install calendar-md-2-html
 
   test:
     desc: Test the package
     cmds:
       # - npm pack
+      # - npm version minor
       - npm test
   
