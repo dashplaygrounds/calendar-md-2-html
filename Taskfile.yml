@@ -1,0 +1,35 @@
+version: '3'
+
+env:
+  VERSION: "v1.0.0"
+  MESSAGE: |
+    * initial commit
+
+tasks:
+  commit:
+    desc: Committing changes
+    cmds:
+      - |
+        git add .
+        git commit -m "{{.VERSION}} {{.MESSAGE}}"
+        git push -f
+        git tag -d "{{.VERSION}}"
+        git push origin --delete "{{.VERSION}}"
+        git tag -a "{{.VERSION}}" -m "Version {{.VERSION}}"
+        git push -uf origin --tags
+
+  publish:
+    desc: Publish package to npm registry
+    cmds:
+      - npm publish
+
+  install:
+    desc: Install the package
+    cmds:
+      - pnpm install calendar-md-to-html
+
+  test:
+    desc: Test the package
+    cmds:
+      - npm test
+  

@@ -1,0 +1,28 @@
+{
+  "name": "calendar-md-to-html",
+  "version": "1.0.0",
+  "description": "Library that converts own parsed calendar markdown to html string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "markdown",
+    "calendar",
+    "html",
+    "parser",
+    "converter"
+  ],
+  "author": "Mark Silverio",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dashplaygrounds/calendar-md-to-html"
+  },
+  "dependencies": {
+    "calendar-md-to-html": "^1.0.0"
+  }
+}

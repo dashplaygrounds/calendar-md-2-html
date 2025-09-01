@@ -1,23 +1,3 @@
-# calendar-md-to-html
-
-![Calendar Markdown to HTML Demo](image.png)
-
-## About
-```
-Library that converts own parsed calendar markdown to html
-Published to npm registry
-```
-
-## Import this in your application
-```bash
-pnpm add calendar-md-to-html
-yarn add calendar-md-to-html
-npm i calendar-md-to-html
-```
-
-## Usage 1
-```js 
-// test.js
 const { markdownToTree, treeToCalendarHTMLTable, treeToHTML } = require('./index');
 const fs = require('fs');
 // const md = `
@@ -42,10 +22,3 @@ console.log(htmlTable);
 
 const html = treeToHTML(tree);
 console.log(html);
-```
-
-## Usage 2
-```ts
-// app.ts
-
-```
