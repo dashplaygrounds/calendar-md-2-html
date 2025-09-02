@@ -1,7 +1,7 @@
 version: '3'
 
 env:
-  VERSION: "v1.2.0"
+  VERSION: "v2.0.0"
   MESSAGE: |
     * used different package name calendar-md-2-html
 
@@ -13,8 +13,8 @@ tasks:
         git add .
         git commit -m "{{.VERSION}} {{.MESSAGE}}"
         git push -f
-        # git tag -d "{{.VERSION}}"
-        # git push origin --delete "{{.VERSION}}"
+        git tag -d "{{.VERSION}}"
+        git push origin --delete "{{.VERSION}}"
         git tag -a "{{.VERSION}}" -m "Version {{.VERSION}}"
         git push -uf origin --tags
 
@@ -32,6 +32,6 @@ tasks:
     desc: Test the package
     cmds:
       # - npm pack
-      # - npm version minor
+      # - npm version patch
       - npm test
   
